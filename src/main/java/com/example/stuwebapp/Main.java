@@ -13,12 +13,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class main extends Application {
-    public main() {
+public class Main extends Application {
+    public Main() {
     }
 
     public void start(Stage stage) throws IOException, SQLException {
-        FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("startPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("startPage.fxml"));
         Scene scene = new Scene((Parent)fxmlLoader.load(), 600.0, 400.0);
         stage.setTitle("Ltu Library");
         stage.setScene(scene);
