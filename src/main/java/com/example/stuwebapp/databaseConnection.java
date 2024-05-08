@@ -3,26 +3,28 @@ package com.example.stuwebapp;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class databaseConnection {
-    public static Connection conn = null;
-    static Statement st = null;
-    public Connection connect;
-
+    static Connection conn = null;
 
     public static void connect() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/ltulibrarysql"; // Replace with your MySQL URL
-        String username = ""; // Replace with your MySQL username
-        String password = ""; // Replace with your MySQL password
+        if (conn != null) {
+            return; // Already connected
+        }
+        String url = "jdbc:mysql://localhost:3306/ltulibrarysql";
+        String username = "root";
+        String password = "Annanpere1293!!!";
 
-        // Establishing the connection
         try {
             conn = DriverManager.getConnection(url, username, password);
             System.out.println("Connected to the database!");
-            st = conn.createStatement();
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Failed to connect to the database: " + e.getMessage());
+            throw e;
         }
+    }
+
+    public static Connection getConnection() {
+        return conn;
     }
 }
