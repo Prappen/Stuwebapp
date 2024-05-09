@@ -26,3 +26,13 @@
     -fx-background-color: #ffffff;
     -fx-background-radius: 50;
 }
+
+/* White background */
+.white-background {
+    -fx-background-color: #fff;
+}
+
+/* Body background */
+.body-background {
+    -fx-background-color: #e5f6f4;
+}
