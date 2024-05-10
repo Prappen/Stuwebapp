@@ -23,7 +23,7 @@
                </HBox.margin>
             </ImageView>
             <Pane prefHeight="93.0" prefWidth="121.0" />
-            <HBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="299.0" spacing="50.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="256.0" spacing="50.0">
                <children>
                   <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
