@@ -2,7 +2,6 @@ package objects;
 
 public class Post {
     private Account account;
-    private boolean isVerified;
     private PostAudience audience;
     private String date;
     private String caption;
@@ -16,10 +15,6 @@ public class Post {
     }
     public void setAccount(Account account) {
         this.account = account;
-    }
-
-    public boolean isVerified() {
-        return isVerified;
     }
 
     public PostAudience getAudience() {
@@ -36,5 +31,40 @@ public class Post {
     }
     public String getCaption() {
         return caption;
+    }
+    public void setCaption(String caption) {
+        this.caption = caption;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getTotalReaction() {
+        return totalReaction;
+    }
+
+    public void setTotalReaction(String totalReaction) {
+        this.totalReaction = totalReaction;
+    }
+
+    public int getNbComments() {
+        return nbComments;
+    }
+
+    public void setNbComments(int nbComments) {
+        this.nbComments = nbComments;
+    }
+
+    public int getNbShare() {
+        return nbShare;
+    }
+
+    public void setNbShare(int nbShare) {
+        this.nbShare = nbShare;
     }
 }

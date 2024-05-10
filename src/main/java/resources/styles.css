@@ -1,4 +1,7 @@
-
+.reaction-border{
+    -fx-order-width: 1;
+    -fx-border-color: #606266;
+}
 
 
 /* feed */
