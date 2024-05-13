@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" stylesheets="@../resources/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="600.0" styleClass="white-background" stylesheets="@../resources/styles.css" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <Pane prefHeight="93.0" prefWidth="121.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="256.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/chat1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/calander2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/company2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Pane prefHeight="93.0" prefWidth="153.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="39.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search2.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </HBox>
+   </top>
+   <styleClass>
+      <String fx:value="post-background" />
+      <String fx:value="body-background" />
+   </styleClass>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="postContainer" prefHeight="830.0" prefWidth="727.0" styleClass="body-background" stylesheets="@../resources/styles.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="437.0" styleClass="post-background" stylesheets="@../resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/girl.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField prefHeight="50.0" prefWidth="440.0" promptText="Berätta om ditt event!!" styleClass="text-field" stylesheets="@../resources/styles.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Pane prefHeight="830.0" prefWidth="86.0" styleClass="body-background" stylesheets="@../resources/styles.css" />
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Pane prefHeight="830.0" prefWidth="23.0" styleClass="body-background" stylesheets="@../resources/styles.css" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
