@@ -2,6 +2,7 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -63,34 +64,35 @@
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="830.0" prefWidth="599.0">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="112.0" prefWidth="437.0" styleClass="post-background" stylesheets="@../resources/styles.css">
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="postContainer" prefHeight="830.0" prefWidth="727.0" styleClass="body-background" stylesheets="@../resources/styles.css">
                      <children>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/girl.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets right="10.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <TextField prefHeight="50.0" prefWidth="440.0" promptText="Berätta om ditt event" styleClass="text-field" stylesheets="@../resources/styles.css" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="437.0" styleClass="post-background" stylesheets="@../resources/styles.css">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/girl.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField prefHeight="50.0" prefWidth="440.0" promptText="Berätta om ditt event!!" styleClass="text-field" stylesheets="@../resources/styles.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </HBox>
                      </children>
-                     <VBox.margin>
-                        <Insets top="18.0" />
-                     </VBox.margin>
-                  </HBox>
-               </children>
-            </VBox>
-            <Pane prefHeight="830.0" prefWidth="86.0" />
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Pane prefHeight="830.0" prefWidth="86.0" styleClass="body-background" stylesheets="@../resources/styles.css" />
          </children>
       </HBox>
    </center>
    <left>
-      <Pane prefHeight="830.0" prefWidth="23.0" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="830.0" prefWidth="23.0" styleClass="body-background" stylesheets="@../resources/styles.css" BorderPane.alignment="CENTER" />
    </left>
-   <bottom>
-      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="body-background" stylesheets="@../resources/styles.css" BorderPane.alignment="CENTER" />
-   </bottom>
 </BorderPane>
