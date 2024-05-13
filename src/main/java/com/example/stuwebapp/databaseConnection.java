@@ -13,7 +13,7 @@ public class databaseConnection {
         }
         String url = "jdbc:mysql://localhost:3306/ltulibrarysql";
         String username = "root";
-        String password = "Annanpere1293!!!";
+        String password = "Lösenord";
 
         try {
             conn = DriverManager.getConnection(url, username, password);
